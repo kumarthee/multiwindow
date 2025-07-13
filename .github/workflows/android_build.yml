@@ -23,6 +23,9 @@ jobs:
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
 
+      - name: Give execute permission to gradlew
+        run: chmod +x ./gradlew
+
       - name: Clean project
         run: ./gradlew clean
 
